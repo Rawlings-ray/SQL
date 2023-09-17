@@ -35,3 +35,47 @@ Insert Into EmployeeSalary VALUES
 (1007, 'Supplier Relations', 41000),
 (1008, 'Salesman', 48000),
 (1009, 'Accountant', 42000)
+
+SELECT *
+FROM employeedemographics
+where FirstName = 'jim'
+
+SELECT *
+FROM employeedemographics
+where FirstName<>'jim'
+
+SELECT *
+FROM employeedemographics
+where age >30
+
+SELECT *
+FROM employeedemographics
+where age >=30
+
+SELECT *
+FROM employeedemographics
+where age <= 32 and gender ='male'
+
+SELECT *
+FROM employeedemographics
+where Age <=32 OR Gender ='male'
+
+SELECT *
+FROM employeedemographics
+where lastname like 's%'
+
+SELECT *
+FROM employeedemographics
+where LastName like'%s%'
+
+SELECT *
+FROM employeedemographics
+where LastName is null
+
+SELECT *
+FROM employeedemographics
+where FirstName is  not null
+
+SELECT *
+FROM employeedemographics
+where FirstName in ('jim','michael')
