@@ -104,6 +104,28 @@ FROM my_new_database.employeesalary
 inner join my_new_database.employeedemographics
 on employeedemographics.EmployeeID=employeesalary.EmployeeID
 where FirstName<>'michael'
+
+##UNIONS##
+SELECT employeedemographics.EmployeeID,FirstName,Salary
+FROM my_new_database.employeesalary
+inner join my_new_database.employeedemographics
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+where FirstName<>'michael'
+order by Salary desc
+
+SELECT *
+FROM my_new_database.employeedemographics
+union ALL
+select*
+FROM my_new_database.warehouseemployeedemographics
+order by EmployeeID
+
+SELECT EmployeeID,FirstName,Age
+FROM my_new_database.employeedemographics
+union ALL
+select EmployeeID,JobTitle,Salary
+FROM my_new_database.employeesalary
+order by EmployeeID
 order by Salary desc
 
 
