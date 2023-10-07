@@ -79,3 +79,33 @@ where FirstName is  not null
 SELECT *
 FROM employeedemographics
 where FirstName in ('jim','michael')
+
+
+##JOINS##
+SELECT *
+FROM my_new_database.employeedemographics
+inner join my_new_database.employeesalary
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+
+SELECT employeedemographics.EmployeeID,FirstName,LastName,Gender,Salary
+FROM my_new_database.employeedemographics
+INNER JOIN my_new_database.employeesalary
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+
+SELECT JobTitle,AVG(Salary)
+FROM my_new_database.employeesalary
+inner join my_new_database.employeedemographics
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+where JobTitle='salesman'
+group by JobTitle
+
+SELECT employeedemographics.EmployeeID,FirstName,Salary
+FROM my_new_database.employeesalary
+inner join my_new_database.employeedemographics
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+where FirstName<>'michael'
+order by Salary desc
+
+
+
+
