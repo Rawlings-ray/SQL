@@ -128,6 +128,39 @@ FROM my_new_database.employeesalary
 order by EmployeeID
 order by Salary desc
 
+##CASE STATEMENT##
+select FirstName,LastName,Age,
+CASE
+	WHEN Age > 30 THEN 'old'
+	Else 'young'
+END
+FROM my_new_database.employeedemographics
+where Age IS NOT NULL
+ORDER BY Age 
+
+select FirstName,LastName,Age,
+CASE
+	WHEN Age > 30 THEN 'Old'
+    WHEN Age BETWEEN 27 AND 30 THEN 'Young'
+	Else 'Baby'
+END
+FROM my_new_database.employeedemographics
+where Age IS NOT NULL
+ORDER BY Age 
+
+SELECT FirstName,LastName,JobTitle,Salary,
+CASE
+	WHEN JobTitle='Salesman' then Salary +(Salary*.10)
+    WHEN JobTitle='Accountant' then salary+(Salary*.05)
+    when JobTitle ='HR' then salary +(Salary*.00001)
+    ELSE Salary +(Salary*.03)
+end salary_after_raise
+FROM my_new_database.employeedemographics
+JOIN my_new_database.employeesalary
+ON employeedemographics.EmployeeID=employeesalary.EmployeeID
+
+
+
 
 
 
