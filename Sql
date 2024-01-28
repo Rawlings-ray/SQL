@@ -159,6 +159,30 @@ FROM my_new_database.employeedemographics
 JOIN my_new_database.employeesalary
 ON employeedemographics.EmployeeID=employeesalary.EmployeeID
 
+###HAVING CLAUSE
+
+select JobTitle,avg(Salary)
+from my_new_database.employeedemographics
+join my_new_database .employeesalary
+on employeedemographics.EmployeeID=employeesalary.EmployeeID
+group by JobTitle
+having avg(Salary)> 45000
+order by avg(Salary)
+
+###UPDATE AND DELETING USING SET AND WHERE.
+
+select*
+from my_new_database.employeedemographics
+update my_new_database.employeedemographics
+set AGE=31,GENDER='Female'
+where FirstName ='Holly' and LastName ='flax'
+
+Delete from my_new_database.employeedemographics
+where EmployeeID=1005
+
+
+
+
 
 
 
