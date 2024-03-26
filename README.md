@@ -1,5 +1,5 @@
 
-# SQL Functions README
+# SQL Functions
 
 This repository contains SQL code snippets for performing various operations on databases, including creating tables, inserting data, querying with select and where statements, using joins, unions, case statements, having clause, and updating or deleting records.
 
