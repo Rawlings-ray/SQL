@@ -1,45 +1,18 @@
-# SQL Code Repository.
-## Introduction.
-This repository contains SQL code snippets for performing various operations on databases. 
 
-These codes are designed to:
+# SQL Functions README
 
+This repository contains SQL code snippets for performing various operations on databases, including creating tables, inserting data, querying with select and where statements, using joins, unions, case statements, having clause, and updating or deleting records.
 
-     Create tables.
-    
-     Insert items into the tables.
-    
-     Perform select and where statements.
-    
-     Joins.
-    
-     Unions.
-    
-     Case statements.
-    
-     Having clauses.
-    
-     Update and delete operations using set and where clauses.
-     
+## Contents
 
-## Usage.
-
-     Create Tables: To create necessary tables in your database.
-
-     Insert Data: To insert sample data into the created tables.
-
-     Select and Where Statements: Selecting data from tables with various conditions e.g using the where clause.
-
-     Joins: Perform different types of joins such as inner join, left join, right join, and full outer join.
-
-     Unions: To combine the results of multiple select statements using union.
-
-     Case Statements: To learn how to use case statements for conditional operations in SQL queries.
-
-     Having Clause: To filter data based on aggregate conditions.
-
-     Update and Deleting Records: updating and deleting records from tables using set and where clauses.
-     
+1. [Create Tables](#create-tables)
+2. [Insert Data](#insert-data)
+3. [Select and Where Statements](#select-and-where-statements)
+4. [Joins](#joins)
+5. [Unions](#unions)
+6. [Case Statements](#case-statements)
+7. [Having Clause](#having-clause)
+8. [Update and Delete](#update-and-delete)
 
 ## Note
 Make sure to adjust the SQL code according to your specific database schema and requirements.
